@@ -23,9 +23,9 @@
 
     <p>Första frågan: svar nr 1 är rätt</p> <!-- Same as first form but with first question being right-->
     <form name="quiz3">
-        <input type="radio" name="q1" id="right"><span id="rightText" name="q">1</span><br>
-        <input type="radio" name="q1"><span name="q">2</span><br>
-        <input type="radio" name="q1"><span name="q">3</span><br>
+        <input type="checkbox" name="q1" id="right"><span id="rightText" name="q">1</span><br>
+        <input type="checkbox" name="q1" id="right"><span id="rightText" name="q">2</span><br>
+        <input type="checkbox" name="q1"><span name="q">3</span><br>
     </form><br>
 
     <input type="button" value="Rätta quizzen" name="correct" onClick="correctQuiz()"> <!-- Create button that calls fuction correctQuiz-->
@@ -34,15 +34,15 @@
 </html>
 
 <script>
-    function correctQuiz() //Create funtion that changes color of the question ot show which is right and wrong, also display how many questions were right
+    function correctQuiz() //Create funtion that changes color of the question to show which is right and wrong, also display how many questions the player got right
     {
-        var amountOfRight = 0; //create variable that gets outputtet to p with id amountOfRight
+        var amountOfRight = 0; //create variable that gets output to p with id amountOfRight
 
         var spans = document.getElementsByName('q'); //get all spans within the document
 
         for (var i = 0; i < spans.length; i++) //iterate for all spans
         {
-            if (spans[i].id == 'rightText') //if span id=right, change color to green. In other words change all right questions to green
+            if (spans[i].id == 'rightText') //if span id=rightText, change color to green. In other words change all right questions to green
             {
                 spans[i].style.color = 'green';
             }

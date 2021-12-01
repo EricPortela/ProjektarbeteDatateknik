@@ -17,7 +17,7 @@
 /*        LOGO        */
 /*--------------------*/
 /*Left side of navigation bar*/
-.navigation_parent_div > .navigation_child_div_left {
+.navigation_parent_div > .navigation_child_div_left > a >  .logo {
     box-sizing: border-box; /*this line prevents the added padding from being added on the "outer frame of the div". This line considers the given/specified width as the actual width and adjusts the padding there after, inside of the div, rather than outside*/
     padding: 20px;
     width: 30%;
@@ -31,11 +31,11 @@
     font-style: bolder;
 } 
 
-.navigation_parent_div > .navigation_child_div_left > .logo:hover {
+.navigation_parent_div > .navigation_child_div_left > a > .logo:hover {
     cursor: pointer;
 }
 
-.navigation_child_div_left > .logo {
+.navigation_child_div_left > a > .logo {
     height: 50px;
     display: flex;
     align-items: center; 
@@ -170,15 +170,25 @@ li a:hover {
         animation: animate 3s linear infinite;
     }
 
+    /*--------------------*/
+    /* ANIMATION FUNCTION */
+    /* FOR ATTRIBUTE NAMED*/
+    /*     "data-text"    */
+    /*--------------------*/
+    /*This animation enables the attribute data-text to be redrawn an infinite amount of times*/
+    /*When redrawing is finished a new word should pop up, hence content-parameter changing*/
+    /*Current problem: Updated content on works on CHROME/FIREFOX*/
+
+
     @keyframes animate {
         0%,10%,100% {
             width: 0;
-            content: "A";
+            /* content: "A"; */
         }
 
         70%,90% {
             width: 100%;
-            content: "B";
+            /* content: "B"; */
         }
     }
 
@@ -288,26 +298,56 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /*Places the content inside the flexbox vertically*/
-
-    box-sizing: border-box;
-    float: left;
-
+    
+    margin-top: 20px;
     width: 100%;
-    height: 200px;
+    float: left;
+}
+
+
+.about_us > .c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Places the content inside the flexbox vertically*/
+    box-sizing: border-box;
+
+    float: left;
+    width: 10%;
+
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+}
+
+.about_us > .c1 > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.about_us > .c1 > a > img {
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.about_us_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: #50833D;
-}
 
-.about_us > a {
-    max-height: 70px;
-}
+    background-color: white;
 
-.about_us > a > img {
-    margin-top: 20px;
     float: left;
-    max-height: 70px;
 }

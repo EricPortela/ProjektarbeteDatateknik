@@ -311,3 +311,49 @@ li a:hover {
     float: left;
     max-height: 70px;
 }
+
+
+
+.green_button {
+
+    
+    background-color: #50833D;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius:8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.center_text {
+
+    text-align: center;
+}
+
+
+.rightcont {
+    margin-top: 10px;
+    float: right;
+    box-sizing: border-box;
+    width: 100%;
+}
+    .rightbox {
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: right;
+    position: top;
+    margin-left: 50%;
+    width: 50%;
+    margin-top: 10%;
+
+   
+}

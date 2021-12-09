@@ -25,5 +25,5 @@ function correctQuiz()                                                          
         }
     }
 
-    document.getElementById("amountOfRight").innerHTML = "Antal rätt: " + amountOfRight;                     //change p text to amountOfRight
+    document.getElementById("amountOfRight").innerHTML = "Antal rätt: " + amountOfRight + " / 6";                     //change p text to amountOfRight
 }

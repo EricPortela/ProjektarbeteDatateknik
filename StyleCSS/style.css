@@ -94,6 +94,14 @@ li a:hover {
     size: 14px;
 }
 
+a li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+
 
 /*--------------------*/
 /*    CONTAINER DIV   */
@@ -213,6 +221,34 @@ li a:hover {
         font-weight: lighter;
         font-size: 18px;
         color: #50833D;
+    }
+
+    #unordered_list {
+        margin: 0;
+        padding: 0;
+        margin-left: 0px;
+    }
+
+    #unordered_list > li{
+        display: inline-block;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 16px;
+        color: #50833D;
+        margin-bottom: 15px;
+        list-style:none;
+        padding-left:0;
+    }
+
+    #unordered_list > a > li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 16px;
+        color: #50833D;
+        margin-bottom: 15px;
+        padding-left:10px;
+        list-style-position: inside; /*makes the bullet points follow woth the indentetion/left padding*/
     }
 
 
@@ -354,27 +390,32 @@ li a:hover {
 
 
 
+
+
+
+
+
+
 .center_text{
     text-align:center;
-
 }
 
 
-    .green_button {
-        background-color: #50833D;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
+.green_button {
+    background-color: #50833D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 
-    }
+}
     
 .text_divr {
     margin-top:95px;

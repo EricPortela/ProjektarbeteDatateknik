@@ -400,3 +400,32 @@ li a:hover {
     color: #50833D;
 
 }
+
+.quiz_texts
+{
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quiz_question
+{
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f9b49;
+}
+
+.quiz_result
+{
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-top: 500px;
+    padding-left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f9b49;
+}

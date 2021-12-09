@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../StyleCSS/style.css">
+    <script type="text/javascript" src="QuizScript.js"></script>
+    <title>Återvinnings Quiz</title>
+</head>
+<body>
+
+    <div class="main_parent">
+        <div class="navigation_parent_div">
+
+            <div class="navigation_child_div_left">
+                <a href="../HomePage/HomePage.html">
+                    <div class="logo">
+                        WEBBSIDANS NAMN
+                    </div>
+                </a>
+            </div>
+            
+            <div class="navigation_child_div_right">
+                <div class="menu">
+                    <ul>
+                        <!--<li><a href="link">HEM</a></li> -->
+                        <li>
+                            <a href="../HomePage/HomePage.html">
+                                HEM
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Sidor/Energi.html">
+                                ENERGI
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Sidor/Utsläpp.html">
+                                UTSLÄPP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Sidor/Återvinning.html">
+                                ÅTERVINNING
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Sidor/Vattenförbrukning.html">
+                                VATTENFÖRBRUKNING
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_div">
+        <div class="text_div">
+            <div class="main_header">
+                <h1 class="green_text">ÅTERVINNINGS QUIZ</h1>
+            </div>
+
+            <div class="divider">
+                <img src="../Assets/divider.svg">
+            </div>
+
+            <div class="bread_texts">
+                <p class="quiz_question">Första frågan: svar nr 3 är rätt</p>                                                     <!-- General formm of quiz form-->
+                <form name="quiz1">                                                                         <!-- Create form with unique name-->
+                    <input type="radio" name="q1">
+                    <span name="q">1</span><br>                               <!-- Create input radio with name and span to be able to check values later-->
+                    <input type="radio" name="q1">
+                    <span name="q">2</span><br>
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">3</span><br>     <!-- The radio with correct answer also needs id=right for checking amount of right-->
+                </form><br>
+        
+                <p class="quiz_question">Andra frågan: svar nr 2 är rätt</p>                                                     <!-- Repeated form but with second question with id right instead of third-->
+                <form name="quiz2">
+                    <input type="radio" name="q1">
+                    <span name="q">1</span><br>
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">2</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">3</span><br>
+                </form><br>
+        
+                <p class="quiz_question">Tredje frågan: svar nr 1 är rätt</p>                                                     <!-- Same as first form but with first question being right-->
+                <form name="quiz3">
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">1</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">2</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">3</span><br>
+                </form>
+            </div>
+        </div>
+
+        <div class="text_divr">
+            <div class="bread_texts">
+                <p class="quiz_question">Fjärde frågan: svar nr 3 är rätt</p>                                                     <!-- General formm of quiz form-->
+                <form name="quiz1">                                                                         <!-- Create form with unique name-->
+                <input type="radio" name="q1">
+                <span name="q">1</span><br>                               <!-- Create input radio with name and span to be able to check values later-->
+                <input type="radio" name="q1">
+                <span name="q">2</span><br>
+                <input type="radio" name="q1" id="right">
+                <span id="rightText" name="q">3</span><br>     <!-- The radio with correct answer also needs id=right for checking amount of right-->
+                </form><br>
+        
+                <p class="quiz_question">Femte frågan: svar nr 2 är rätt</p>                                                     <!-- Repeated form but with second question with id right instead of third-->
+                <form name="quiz2">
+                    <input type="radio" name="q1">
+                    <span name="q">1</span><br>
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">2</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">3</span><br>
+                </form><br>
+        
+                <p class="quiz_question">Sjätte frågan: svar nr 1 är rätt</p>                                                     <!-- Same as first form but with first question being right-->
+                <form name="quiz3">
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">1</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">2</span><br>
+                    <input type="radio" name="q1">
+                     <span name="q">3</span><br>
+                </form>
+            </div>
+        </div>
+        <div class="center_text">
+            <p id="amountOfRight" class="quiz_result">Antal rätt: </p>
+            <input type="button" class="green_button" value="RÄTTA QUIZZEN" name="correct" onclick="correctQuiz()"><br><br>
+            <a href="../Sidor/Energi.html" class="green_button">TILL TEXTEN</a>
+        </div>
+    </div>
+
+    <br>
+    <div class="section_three">
+        <!--COLUMN 1-->
+        <div class="column">
+            <div class="circle_icon">
+                <img src="../Assets/decentralized.png">
+            </div>
+
+            <div class="icon_text">ANVÄNDA RAMVERK</div>
+        </div>
+
+        <!--COLUMN 2-->
+        <div class="column">
+            <div class="circle_icon">
+                <img src="../Assets/decentralized.png">
+            </div>
+
+            <div class="icon_text">ANVÄNDA RAMVERK</div>
+        </div>
+
+        <!--COLUMN 3-->
+        <div class="column">
+            <div class="circle_icon">
+                <img src="../Assets/decentralized.png">
+            </div>
+
+            <div class="icon_text">ANVÄNDA RAMVERK</div>
+        </div>
+    </div>
+
+    <div class="about_us_text">
+        ETT PROJEKTARBETE I WEBBPROGRAMMERING AV ELEVER PÅ LTH
+    </div>
+
+    <div class="about_us">
+
+        <div class="c1">
+            <a href="https://www.lth.se">
+                <img src="../Assets/lth_logo.svg">
+            </a>
+            <!-- LTH -->
+        </div>
+
+        <div class="c1">
+            <a href="https://github.com/EricPortela/ProjektarbeteDatateknik">
+                <img src="../Assets/github_icon.svg">
+            </a>
+            <!-- Check out our github repo! -->
+        </div> 
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../StyleCSS/style.css">
+    <script type="text/javascript" src="QuizScript.js"></script>
+    <title>Återvinnings Quiz</title>
+</head>
+<body>
+
+    <div class="main_parent">
+        <div class="navigation_parent_div">
+
+            <div class="navigation_child_div_left">
+                <a href="../HomePage/HomePage.html">
+                    <div class="logo">
+                        WEBBSIDANS NAMN
+                    </div>
+                </a>
+            </div>
+            
+            <div class="navigation_child_div_right">
+                <div class="menu">
+                    <ul>
+                        <!--<li><a href="link">HEM</a></li> -->
+                        <li>
+                            <a href="../HomePage/HomePage.html">
+                                HEM
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Sidor/Energi.html">
+                                ENERGI
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Sidor/Utsläpp.html">
+                                UTSLÄPP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Sidor/Återvinning.html">
+                                ÅTERVINNING
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Sidor/Vattenförbrukning.html">
+                                VATTENFÖRBRUKNING
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_div">
+        <div class="text_div">
+            <div class="main_header">
+                <h1 class="green_text">VATTENFÖRBRUKNING QUIZ</h1>
+            </div>
+
+            <div class="divider">
+                <img src="../Assets/divider.svg">
+            </div>
+
+            <div class="bread_texts">
+                <p class="quiz_question">1. Hur mycket vatten producerar Sverige i genomsnitt per år?</p>                                                     <!-- General formm of quiz form-->
+                <form name="quiz1">                                                                         <!-- Create form with unique name-->
+                    <input type="radio" name="q1">
+                    <span name="q">1. 900 miljoner liter</span><br>                               <!-- Create input radio with name and span to be able to check values later-->
+                    <input type="radio" name="q1">
+                    <span name="q">2. 500 miljarder liter</span><br>
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">3. 900 miljarder liter</span><br>     <!-- The radio with correct answer also needs id=right for checking amount of right-->
+                </form><br>
+        
+                <p class="quiz_question">2.  Hur många liter vatten förbrukar en person i genomsnitt per dag?</p>                                                     
+                <form name="quiz2">
+                    <input type="radio" name="q1">
+                    <span name="q">1. 60 liter</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">2. 100 liter</span><br>
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">3. 140 liter</span><br>
+                </form><br>
+        
+                <p class="quiz_question">3. Vilken kategori omfattar störst mängd av  vattenförbrukning för en privatperson?</p>                                                     
+                <form name="quiz3">
+                    <input type="radio" name="q1">
+                    <span name="q">1. Mat och dryck</span><br>
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">2. Personlig hygien</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">3. Tvätt</span><br>
+                </form>
+            </div>
+        </div>
+
+        <div class="text_divr">
+            <div class="bread_texts">
+                <p class="quiz_question">4. Hur mycket vattenförbrukning kan en droppande kran orsaka på ett dygn?</p>                                                     <!-- General form of quiz form-->
+                <form name="quiz1">                                                                         <!-- Create form with unique name-->
+                <input type="radio" name="q1">
+                <span name="q">1. 2 liter</span><br>                               <!-- Create input radio with name and span to be able to check values later-->
+                <input type="radio" name="q1">
+                <span name="q">2. 10 liter</span><br>
+                <input type="radio" name="q1" id="right">
+                <span id="rightText" name="q">3. 55 liter</span><br>     <!-- The radio with correct answer also needs id=right for checking amount of right-->
+                </form><br>
+        
+                <p class="quiz_question">5. Varför är det viktigt att vi är sparsamma med vår förbrukning av vatten?</p>                                                     
+                <form name="quiz2">
+                    <input type="radio" name="q1">
+                    <span name="q">1. Det kan leda till bevattningsförbud på sommaren</span><br>
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">2. Samhällsviktiga funktioner kan få minskad effektivitet</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">3. Det kan leda till mindre framställning av varmvatten</span><br>
+                </form><br>
+        
+                <p class="quiz_question">6. Vad är virtuellt vatten?</p>                                                     <!-- Same as first form but with first question being right-->
+                <form name="quiz3">
+                    <input type="radio" name="q1" id="right">
+                    <span id="rightText" name="q">1. Vattenförbrukning som orsakas av konsumtion av produkter</span><br>
+                    <input type="radio" name="q1">
+                    <span name="q">2. En teknik för att mäta vattenförbrukning online</span><br>
+                    <input type="radio" name="q1">
+                     <span name="q">3. Ett företag som framställer rent vatten</span><br>
+                </form>
+            </div>
+        </div>
+
+        <div class="center_text">
+            <p id="amountOfRight" class="quiz_result">Antal rätt: </p>
+            <input type="button" class="green_button" value="RÄTTA QUIZZEN" name="correct" onclick="correctQuiz()"><br><br>
+            <a href="../Sidor/Vattenförbrukning.html" class="green_button">TILL TEXTEN</a>
+        </div>
+    </div>
+
+    <br>
+    <div class="section_three">
+        <!--COLUMN 1-->
+        <div class="column">
+            <div class="circle_icon">
+                <img src="../Assets/decentralized.png">
+            </div>
+
+            <div class="icon_text">ANVÄNDA RAMVERK</div>
+        </div>
+
+        <!--COLUMN 2-->
+        <div class="column">
+            <div class="circle_icon">
+                <img src="../Assets/decentralized.png">
+            </div>
+
+            <div class="icon_text">ANVÄNDA RAMVERK</div>
+        </div>
+
+        <!--COLUMN 3-->
+        <div class="column">
+            <div class="circle_icon">
+                <img src="../Assets/decentralized.png">
+            </div>
+
+            <div class="icon_text">ANVÄNDA RAMVERK</div>
+        </div>
+    </div>
+
+    <div class="about_us_text">
+        ETT PROJEKTARBETE I WEBBPROGRAMMERING AV ELEVER PÅ LTH
+    </div>
+
+    <div class="about_us">
+
+        <div class="c1">
+            <a href="https://www.lth.se">
+                <img src="../Assets/lth_logo.svg">
+            </a>
+            <!-- LTH -->
+        </div>
+
+        <div class="c1">
+            <a href="https://github.com/EricPortela/ProjektarbeteDatateknik">
+                <img src="../Assets/github_icon.svg">
+            </a>
+            <!-- Check out our github repo! -->
+        </div> 
+    </div>
+</div>
+</body>
+</html>

@@ -312,7 +312,8 @@ a li:hover {
     box-sizing: border-box;
     float: left;
 
-    width: 33%;
+    width: 50%;
+    /* width: 33%; */
     height: 200px;
 
     align-items: center;

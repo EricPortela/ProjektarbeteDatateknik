@@ -250,6 +250,17 @@ a li:hover {
         list-style-position: inside; /*makes the bullet points follow woth the indentetion/left padding*/
     }
 
+    .text_sources {
+        margin-bottom: 10px;
+    }
+
+    .text_sources > a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 16px;
+        color: #50833D;
+    }
+
     .all_cards {
         width: 100%;
         float: left;
